@@ -1,0 +1,29 @@
+{
+  "name": "@vue/state",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "ancm-s/vue-state",
+  "author": {
+    "name": "An Duc",
+    "email": "me@clgt.io",
+    "url": "https://ancm-s.github.io"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-flow": "^7.0.0",
+    "concurrently": "^4.0.1",
+    "np": "^3.0.4",
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-uglify": "^6.0.0",
+    "vue": "^2.5.17"
+  },
+  "scripts": {
+    "publish": "np",
+    "build": "rollup -c",
+    "watch": "concurrently \"rollup -w -c\""
+  }
+}
